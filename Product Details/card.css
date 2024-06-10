@@ -1,0 +1,313 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.logo i {
+  margin-left: 30px;
+}
+
+/* Card Styles */
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 22px;
+}
+
+/* Left Image Styles */
+.left img {
+  width: 100%;
+  max-width: 366px;
+  margin: 0 auto; /* Center image horizontally */
+  padding: 20px;
+}
+
+/* Card Image Styles */
+.card .img img {
+  width: 74px;
+  margin-left: 22px;
+  cursor: pointer;
+  border-radius: 7.5px;
+}
+
+.highlight {
+  color: #003c43;
+  font-size: large;
+  font-weight: bolder;
+}
+
+/* Right Section Styles */
+.right {
+  margin-top: 11px;
+  padding: 20px;
+}
+
+.right h3,
+.right h1,
+.right i,
+.right h4,
+.right p {
+  margin-top: 11px;
+  margin-bottom: 0;
+}
+
+.right h3 {
+  color: gray;
+}
+
+.right i {
+  color: #135d66;
+}
+
+.header-right a {
+  text-decoration: none;
+  color: white;
+  font-weight: 1000;
+  font-size: 1.5rem;
+  margin-right: 40px;
+  padding: 10px;
+}
+
+.header-right a:hover {
+  background-color: #003c43;
+}
+
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10000;
+  background: #f7f7f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loader-container.active {
+  display: none;
+}
+
+.loader-container img {
+  height: 50rem;
+}
+
+/* Button Styles */
+.nbtn button {
+  /* Remove width and height properties */
+  background-color: #003c43;
+  color: white;
+  font-size: 25px;
+  border: none;
+  margin-top: 22px;
+  margin-inline: 22px;
+  font-weight: 600;
+  margin-left: 1px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  padding: 7.5px;
+}
+
+.right button:hover {
+  background-color: #77b0aa;
+  color: black;
+}
+
+.number-input {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+  border-radius: 5px;
+  padding: 2px;
+}
+
+.minus-btn,
+.plus-btn {
+  width: 30px;
+  height: 30px;
+  font-size: 16px;
+  text-align: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: #333;
+  font-weight: bold;
+}
+
+.minus-btn:hover,
+.plus-btn:hover {
+  background-color: #77b0aa;
+}
+
+input[type="text"] {
+  width: 40px;
+  height: 20px;
+  text-align: center;
+  border: none;
+  font-size: 15px;
+  margin: 0 5px;
+  font-weight: bolder;
+}
+
+input[type="text"]::-webkit-inner-spin-button,
+input[type="text"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.footer {
+  background-color: rgb(0, 60, 67);
+  color: rgb(227, 254, 247);
+  padding: 20px;
+  font-family: "Poppins";
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+  flex: 1;
+  margin-right: 20px;
+  text-align: center;
+  margin-bottom: 20px; /* Add margin bottom for spacing */
+}
+
+.footer-column h3 {
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column li {
+  margin-bottom: 5px;
+}
+
+.footer-column a {
+  color: rgb(227, 254, 247);
+  text-decoration: none;
+}
+
+.footer-copyright {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.fa-facebook,
+.fa-twitter,
+.fa-instagram {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 20px;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-facebook:before {
+  content: "\f09a";
+}
+
+.fa-twitter:before {
+  content: "\f099";
+}
+
+.fa-instagram:before {
+  content: "\f16d";
+}
+
+.footer-column a {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  transition: transform 0.3s ease;
+}
+
+.footer-column a:hover {
+  transform: translateY(-5px);
+}
+
+.footer-column a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #77b0aa;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.footer-column a:hover::before {
+  transform: scaleX(1);
+}
+
+/* Media Queries for Responsiveness */
+@media (min-width: 768px) {
+  .card {
+    flex-direction: row;
+  }
+  .right {
+    flex: 1; /* Make the right section grow to fill remaining space */
+  }
+  .footer-container {
+    justify-content: space-between;
+  }
+  .footer-column {
+    flex-basis: 30%; /* Set a flexible basis for each column */
+    max-width: 30%; /* Set a maximum width for each column */
+  }
+}
+@media (max-width: 1170px) {
+  .card {
+    flex-direction: column; /* Change to column layout on smaller screens */
+  }
+
+  .card .img {
+    width: 100%; /* Ensure images take full width */
+    margin-top: 20px; /* Add some space between the left image and the images in the card */
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    flex-direction: column; /* Change to column layout on smaller screens */
+  }
+
+  .left img {
+    width: 100%; /* Ensure left image takes full width */
+    max-width: 366px; /* Limit maximum width of left image */
+    margin: 0 auto; /* Center left image horizontally */
+  }
+
+  .right {
+    order: -1; /* Move the .right section above the .left image */
+    margin-top: 20px; /* Add margin-top to separate it from the left image */
+  }
+
+  .number-input {
+    display: flex;
+    justify-content: center; /* Center the number-input horizontally */
+    margin-top: 20px; /* Add some space between the .right section and the number-input */
+  }
+}

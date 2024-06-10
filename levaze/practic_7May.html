@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main Page</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./practtic7May.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <!-- header/nav-bar section starts -->
+    <header class="header">
+        <div class="header-1">
+            <a href="#" class="logo"> <i class="fas fa-book"> </i> कि𝖙𝖆ब
+            </a>
+
+            <form action="" class="search-form">
+                <input type="search" name="" placeholder="Serch Here...." id="search-box" />
+                <label for="search-box" class="fas fa-search"></label>
+            </form>
+
+            <div class="icon">
+                <div id="search-btn" class="fas fa-search"></div>
+                <a href="/flip-book/flip-book/index.html" class="fas fa-heart"></a>
+                <a href="/bookleaf cart/cart.html" class="fas fa-shopping-cart"></a>
+                <div id="login-btn" class="fas fa-user"></div>
+            </div>
+        </div>
+
+        <div class="header-2">
+            <nav class="navbar">
+                <a href="#home">home</a>
+                <a href="#featured">featured</a>
+                <a href="#genre">Genre</a>
+                <a href="#arrivals">arrivals</a>
+                <a href="#authors">Authors </a>
+                <a href="#reviews">reviews</a>
+                <a href="#blogs">blogs </a>
+            </nav>
+        </div>
+    </header>
+    <!-- header/nav-bar section end -->
+
+    <!-- login form starts-->
+    <div class="login-form-container">
+        <div id="close-login-btn" class="fas fa-times"></div>
+
+        <form action="">
+            <h3>Sign In</h3>
+            <span>User Name</span>
+            <input type="email" name="" class="box" placeholder="Enter Your Username" id="" />
+            <span>Password</span>
+            <input type="password" name="" class="box" placeholder="Enter Your Password" id="" />
+            <div class="checkbox">
+                <input type="checkbox" name="" id="remember-me" />
+                <label for="remember-me"> Remember Me</label>
+            </div>
+            <input type="submit" value="sign in" class="btn" />
+            <p>Forgot Password? <a href="#">Click Here</a></p>
+            <p>
+                Don't Have an Account <a href="/bookleaf/signup.html">Create One</a>
+            </p>
+        </form>
+    </div>
+    <!-- login form ends -->
+
+    <!-- home section starts -->
+    <section class="home" id="home">
+        <div class="row">
+            <div class="content">
+                <div class="roww">
+                    <h2>JUST</h2>
+                    <h1><span id="element"></span>
+                        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+                        <script>
+                            var typed = new Typed("#element", {
+                                strings: [
+                                    "BUY",
+                                    "RENT",
+                                    "READ",
+                                ],
+                                typeSpeed: 50,
+                                loop: true,
+                                backDelay: 900,
+                                backSpeed: 30,
+                            });
+                        </script>
+                        <h2>IT</h2>
+                </div>
+                <p>
+                    Stock up on your next literary adventure for less! कि𝖙𝖆ब's Deal
+                    of the Day slashes prices up to a whopping 70% off on a hand-picked
+                    collection of books. Dive into captivating fiction, explore
+                    informative non-fiction, or snag that must-have read you've been
+                    eyeing. Don't miss out on these incredible savings – explore the
+                    Deal of the Day before these discounted titles disappear!
+                </p>
+                <a href="#" class="btn">shop now</a>
+            </div>
+
+            <div class="swiper books-slider">
+                <div class="swiper-wrapper">
+                    <a href="/Product Details/PRD.html" class="swiper-slide">
+                        <img src="./book-1.jpg" alt="" />
+                    </a>
+                    <a href="/Product Details/PRD.html" class="swiper-slide">
+                        <img src="./book-2.jpg" alt="" />
+                    </a>
+                    <a href="/Product Details/PRD.html" class="swiper-slide">
+                        <img src="./book-3.jpg" alt="" />
+                    </a>
+                    <a href="/Product Details/PRD.html" class="swiper-slide">
+                        <img src="/bookleaf cart/images/pic2.jpg" alt="" />
+                    </a>
+                    <a href="/Product Details/PRD.html" class="swiper-slide">
+                        <img src="./book-5.jpg" alt="" />
+                    </a>
+                    <a href="/Product Details/PRD.html" class="swiper-slide">
+                        <img src="./book-6.jpeg" alt="" />
+                    </a>
+                </div>
+
+                <img src="./book-stand-removebg-preview.png" alt="" class="stand" />
+            </div>
+        </div>
+    </section>
+    <!--home section ends  -->
+
+    <!-- icon section starts -->
+    <section class="icons-container">
+        <div class="icons">
+            <i class="fas fa-plane"> </i>
+            <div class="content">
+                <h3>free shipping</h3>
+                <p>order over ₹500</p>
+            </div>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-lock"> </i>
+            <div class="content">
+                <h3>secure payment</h3>
+                <p>100 secure payment</p>
+            </div>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-redo-alt"> </i>
+            <div class="content">
+                <h3>easy returns</h3>
+                <p>10 days returns</p>
+            </div>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-headset"> </i>
+            <div class="content">
+                <h3>24/7 support</h3>
+                <p>call us anytime</p>
+            </div>
+        </div>
+    </section>
+    <!-- icon section end -->
+
+    <!-- featured section starts -->
+    <section class="featured" id="featured">
+        <h1 class="heading"><span>featured books</span></h1>
+
+        <div class="swiper featured-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="/Product Details/PRD.html" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="./book-1.jpg" alt="" />
+                    </div>
+                    <div class="content">
+                        <h3>Magical Cool Cat Mystries</h3>
+                        <div class="price">₹500 <span>₹800</span></div>
+                        <a href="/Product Details/PRD.html" class="btn">add to cart </a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="/Product Details/PRD.html" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="./book-2.jpg" alt="" />
+                    </div>
+                    <div class="content">
+                        <h3>Over The Hill</h3>
+                        <div class="price">₹500 <span>₹700</span></div>
+                        <a href="/Product Details/PRD.html" class="btn">add to cart </a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="/Product Details/PRD.html" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="./book-3.jpg" alt="" />
+                    </div>
+                    <div class="content">
+                        <h3>Love At First Bite</h3>
+                        <div class="price">₹500 <span>₹1000</span></div>
+                        <a href="/Product Details/PRD.html" class="btn">add to cart </a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="/Product Details/PRD.html" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="/bookleaf cart/images/pic2.jpg" alt="" />
+                    </div>
+                    <div class="content">
+                        <h3>Into The Woodland</h3>
+                        <div class="price">₹500 <span>₹1500</span></div>
+                        <a href="/Product Details/PRD.html" class="btn">add to cart </a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="/Product Details/PRD.html" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="./book-5.jpg" alt="" />
+                    </div>
+                    <div class="content">
+                        <h3>EarthRise</h3>
+                        <div class="price">₹500 <span>₹5600</span></div>
+                        <a href="/Product Details/PRD.html" class="btn">add to cart </a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="/Product Details/PRD.html" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="./book-6.jpeg" alt="" />
+                    </div>
+                    <div class="content">
+                        <h3>The Aziola's Cry</h3>
+                        <div class="price">₹500 <span>₹650</span></div>
+                        <a href="/Product Details/PRD.html" class="btn">add to cart </a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="/Product Details/PRD.html" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="./book-7.jpg" alt="" />
+                    </div>
+                    <div class="content">
+                        <h3>Wolf of The Past</h3>
+                        <div class="price">₹500 <span>₹800</span></div>
+                        <a href="/Product Details/PRD.html" class="btn">add to cart </a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="/Product Details/PRD.html" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="./book-8.jpg" alt="" />
+                    </div>
+                    <div class="content">
+                        <h3>Lost To You</h3>
+                        <div class="price">₹500 <span>₹700</span></div>
+                        <a href="/Product Details/PRD.html" class="btn">add to cart </a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="/Product Details/PRD.html" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="./book-9.jpg" alt="" />
+                    </div>
+                    <div class="content">
+                        <h3>Mastermind</h3>
+                        <div class="price">₹500 <span>₹770</span></div>
+                        <a href="/Product Details/PRD.html" class="btn">add to cart </a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="/Product Details/PRD.html" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="./book-10.jpg" alt="" />
+                    </div>
+                    <div class="content">
+                        <h3>Genesis</h3>
+                        <div class="price">₹500 <span>₹900</span></div>
+                        <a href="/Product Details/PRD.html" class="btn">add to cart </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- featured section ends -->
+
+    <!-- newsletter section starts -->
+    <section class="newsletter">
+        <form action="">
+            <h3>Subscribe for Latest Updates</h3>
+            <input type="email" placeholder="Enter Your Email" id="" class="box" />
+            <input type="submit" value="subscribe" class="btn" />
+        </form>
+    </section>
+    <!-- newsletter section ends -->
+
+    <br><br><br><br>
+
+    <h1 class="heading" id="genre"><span>Genres</span></h1>
+
+    <section class="cube-swiper">
+        <div class="swiper myCustomSwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="/genre/adventure.html"><img src="/levaze/genres/A&A.png" alt="Nature Image 1" /></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="/levaze/genres/COMEDY.png" alt="Nature Image 2" /></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="/genre/biography.html"><img src="/levaze/genres/BIOGRAPHY.png" alt="Nature Image 3" /></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="/genre/childrens.html"><img src="/levaze/genres/CHILDREN's.jpg" alt="Nature Image 4" /></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="/genre/fiction.html"><img src="/levaze/genres/FICTION.png" alt="Nature Image 4" /></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="/levaze/genres/HISTORY.png" alt="Nature Image 4" /></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="/genre/horror.html"><img src="/levaze/genres/HORROR.png" alt="Nature Image 4" /></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="/genre/non-fiction.html"><img src="/levaze/genres/NON-FICTIONAL.jpg"
+                            alt="Nature Image 4" /></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="/genre/romance.html"><img src="/levaze/genres/ROMANCE.png" alt="Nature Image 4" /></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="/genre/sci-fiction.html"><img src="/levaze/genres/SCI-FI.png" alt="Nature Image 4" /></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="/genre/mystery.html"><img src="/levaze/genres/THRILLER.jpg" alt="Nature Image 4" /></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".myCustomSwiper", {
+            effect: "cube",
+            grabCursor: true,
+            cubeEffect: {
+                shadow: false,
+                slideShadows: false,
+            },
+            autoplay: {
+                delay: 600,
+                disableOnInteraction: false,
+            },
+            speed: 1000,
+            loop: true,
+        });
+    </script>
+
+    <!-- arrivals section starts -->
+    <section class="arrivals" id="arrivals">
+        <h1 class="heading"><span>new arrivals</span></h1>
+
+        <div class="swiper arrivals-slider">
+            <div class="swiper-wrapper">
+                <a href="/Product Details/PRD.html" class="swiper-slide box">
+                    <div class="image"><img src="./book-1.jpg" alt="" /></div>
+                    <div class="content">
+                        <h3>new arrivals</h3>
+                        <div class="price">₹500 <span>₹690</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="/Product Details/PRD.html" class="swiper-slide box">
+                    <div class="image">
+                        <img src="./book-2.jpg" alt="" />
+                    </div>
+                    <div class="content">
+                        <h3>new arrivals</h3>
+                        <div class="price">₹500 <span>₹700</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="/Product Details/PRD.html" class="swiper-slide box">
+                    <div class="image">
+                        <img src="./book-3.jpg" alt="" />
+                    </div>
+                    <div class="content">
+                        <h3>new arrivals</h3>
+                        <div class="price">₹500 <span>₹800</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="/Product Details/PRD.html" class="swiper-slide box">
+                    <div class="image">
+                        <img src="/bookleaf cart/images/pic2.jpg" alt="" />
+                    </div>
+                    <div class="content">
+                        <h3>new arrivals</h3>
+                        <div class="price">₹500 <span>₹800</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="/Product Details/PRD.html" class="swiper-slide box">
+                    <div class="image">
+                        <img src="./book-5.jpg" alt="" />
+                    </div>
+                    <div class="content">
+                        <h3>new arrivals</h3>
+                        <div class="price">₹500 <span>₹1000</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="swiper arrivals-slider">
+            <div class="swiper-wrapper">
+                <a href="/Product Details/PRD.html" class="swiper-slide box">
+                    <div class="image">
+                        <img src="./book-6.jpeg" alt="" />
+                    </div>
+                    <div class="content">
+                        <h3>new arrivals</h3>
+                        <div class="price">₹500 <span>₹1200</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="/Product Details/PRD.html" class="swiper-slide box">
+                    <div class="image">
+                        <img src="./book-7.jpg" alt="" />
+                    </div>
+                    <div class="content">
+                        <h3>new arrivals</h3>
+                        <div class="price">₹500 <span>₹1300</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="/Product Details/PRD.html" class="swiper-slide box">
+                    <div class="image">
+                        <img src="./book-8.jpg" alt="" />
+                    </div>
+                    <div class="content">
+                        <h3>new arrivals</h3>
+                        <div class="price">₹500 <span>₹2500</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="/Product Details/PRD.html" class="swiper-slide box">
+                    <div class="image">
+                        <img src="./book-9.jpg" alt="" />
+                    </div>
+                    <div class="content">
+                        <h3>new arrivals</h3>
+                        <div class="price">₹500 <span>₹5300</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="/Product Details/PRD.html" class="swiper-slide box">
+                    <div class="image">
+                        <img src="./book-10.jpg" alt="" />
+                    </div>
+                    <div class="content">
+                        <h3>new arrivals</h3>
+                        <div class="price">₹500 <span>₹3400</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- arrivals section ends -->
+
+    <h1 class="heading" id="authors"><span>Authors</span></h1>
+    <section class="card-swiper-section">
+        <div class="swiper-container card-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="slide-content">
+                        <div class="image-container">
+                            <img src="/authorsimages/images/collen hoover.jpg" alt="Image" class="slide-image">
+                        </div>
+                        <div class="slide-name">Collen Hoover</div>
+                        <div class="slide-button"><a href="/Authors page/author1.html"><button>Know More</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="slide-content">
+                        <div class="image-container">
+                            <img src="/authorsimages/images/harrypotter.jpg" alt="Image" class="slide-image">
+                        </div>
+                        <div class="slide-name">Harry Potter</div>
+                        <div class="slide-button"><a href="/Authors page/author2.html"><button>Know More</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="slide-content">
+                        <div class="image-container">
+                            <img src="/authorsimages/images/jane austen.jpg" alt="Image" class="slide-image">
+                        </div>
+                        <div class="slide-name">Jane Austen</div>
+                        <div class="slide-button"><a href="/Authors page/author3.html"><button>Know More</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="slide-content">
+                        <div class="image-container">
+                            <img src="/authorsimages/images/jane eyre.jpg" alt="Image" class="slide-image">
+                        </div>
+                        <div class="slide-name">Jane Eyre</div>
+                        <div class="slide-button"><a href="/Authors page/author4.html"><button>Know More</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="slide-content">
+                        <div class="image-container">
+                            <img src="/authorsimages/images/ravinder.jpeg" alt="Image" class="slide-image">
+                        </div>
+                        <div class="slide-name">Ravinder</div>
+                        <div class="slide-button"><a href="/Authors page/author7.html"><button>Know More</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="slide-content">
+                        <div class="image-container">
+                            <img src="/authorsimages/images/Rinakent.jpg" alt="Image" class="slide-image">
+                        </div>
+                        <div class="slide-name">Rinakent</div>
+                        <div class="slide-button"><a href="/Authors page/author5.html"><button>Know More</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var cardSwiper = new Swiper('.card-swiper', {
+                effect: "cards",
+                grabCursor: true,
+            });
+        });
+    </script>
+
+    <a href="#" id="backToTopBtn"><img id="backToTopImg" src="/kitab bbt/up-arrow.png"></a>
+
+    <!-- deal section starts -->
+    <section class="deal">
+        <div class="content">
+            <h3>deal of the day</h3>
+            <h1>upto 50% off</h1>
+            <p>
+                Dive into a world of stories without breaking the bank! Today's
+                कि𝖙𝖆ब Deal of the Day offers incredible savings of up to 50% off on
+                a curated selection of books.
+            </p>
+            <a href="#" class="btn">shop now</a>
+        </div>
+
+        <div class="image">
+            <img src="./deal-image-2.jpg" alt="" />
+        </div>
+    </section>
+    <!-- deal section ends -->
+
+    <!-- reviews section starts -->
+    <section class="reviews" id="reviews">
+        <h1 class="heading"><span> User Testimonials </span></h1>
+
+        <div class="swiper reviews-slider">
+            <div class="swiper-wrapper">
+                <!-- user 1 -->
+                <div class="swiper-slide box">
+                    <img src="./user1.jpg" alt="" />
+                    <h3>Annie</h3>
+                    <p>
+                        कि𝖙𝖆ब offers an incredible selection of books both for purchase
+                        and rent, making it my go-to site for all my reading needs!
+                    </p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <!-- user 2 -->
+                <div class="swiper-slide box">
+                    <img src="./user2.jpg" alt="" />
+                    <h3>alina</h3>
+                    <p>
+                        I love कि𝖙𝖆ब's user-friendly website and the prompt delivery
+                        service; renting books has never been this easy!
+                    </p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <!-- user 3 -->
+                <div class="swiper-slide box">
+                    <img src="./user3.jpg" alt="" />
+                    <h3>patty</h3>
+                    <p>
+                        कि𝖙𝖆ब's rental service is a game-changer for avid readers on a
+                        budget. Highly recommend!
+                    </p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <!-- user 4 -->
+                <div class="swiper-slide box">
+                    <img src="./user4.jpg" alt="" />
+                    <h3>tony</h3>
+                    <p>
+                        Perfect for students on a budget! Affordable way to access all the
+                        required course materials
+                    </p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <!-- user 5 -->
+                <div class="swiper-slide box">
+                    <img src="./user5.jpg" alt="" />
+                    <h3>john</h3>
+                    <p>
+                        कि𝖙𝖆ब is my go-to for out-of-print books. Huge selection and
+                        fantastic customer service.
+                    </p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <!-- user 6 -->
+                <div class="swiper-slide box">
+                    <img src="./user6.jpg" alt="" />
+                    <h3>mick</h3>
+                    <p>
+                        Renting textbooks on कि𝖙𝖆ब saved me a ton! Great selection and
+                        fast shipping.
+                    </p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- reviews section ends -->
+
+    <!-- blogs section starts -->
+    <section class="blogs" id="blogs">
+        <h1 class="heading"><span>our blogs</span></h1>
+
+        <div class="swiper blogs-slider">
+            <div class="swiper-wrapper">
+                <!-- blog 1 -->
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="blog1.jpg" alt="" />
+                    </div>
+                    <div class="content">
+                        <h3>
+                            Rent vs. Buy: The Ultimate Guide for Bookworms on a Budget
+                        </h3>
+                        <p>
+                            Torn between renting and buying your next read? This guide
+                            explores the pros and cons of each option, helping you decide
+                            what works best for your wallet and bookshelf.
+                        </p>
+                        <a href="#" class="btn"> read more</a>
+                    </div>
+                </div>
+                <!-- blog 2 -->
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="blog2.jpg" alt="" />
+                    </div>
+                    <div class="content">
+                        <h3>
+                            Beyond Textbooks: 5 Unexpected Gems You Can Rent on कि𝖙𝖆ब
+                        </h3>
+                        <p>
+                            Think कि𝖙𝖆ब is just for textbooks? Think again! Discover
+                            surprising hidden treasures you can rent on our platform, from
+                            captivating graphic novels to out-of-print classics.
+                        </p>
+                        <a href="#" class="btn"> read more</a>
+                    </div>
+                </div>
+                <!-- blog 3 -->
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="/levaze/Blogss/2392dca5ebf4e305dfde6cf868582d6a.jpg" alt="" />
+                    </div>
+                    <div class="content">
+                        <h3>
+                            Declutter Your Shelves and Help Others: The कि𝖙𝖆ब Renting
+                            Revolution
+                        </h3>
+                        <p>
+                            Give your dusty textbooks a second life and support fellow
+                            readers! Explore how कि𝖙𝖆ब's renting system benefits both
+                            your budget and the literary community.
+                        </p>
+                        <a href="#" class="btn"> read more</a>
+                    </div>
+                </div>
+                <!-- blog 4 -->
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="/levaze/Blogss/235cdb4db574526ad63450c77186faef.jpg" alt="" />
+                    </div>
+                    <div class="content">
+                        <h3>
+                            Can't Keep Up With Your TBR List? Here's How कि𝖙𝖆ब Can Help
+                        </h3>
+                        <p>
+                            Drowning in a mountain of "to-be-read" books? कि𝖙𝖆ब offers
+                            the perfect solution! Learn how our affordable renting model
+                            allows you to conquer your TBR list without breaking the bank.
+                        </p>
+                        <a href="#" class="btn"> read more</a>
+                    </div>
+                </div>
+                <!-- blog 5 -->
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="/levaze/Blogss/1735cd3d480dc88ab84987509b4837df.jpg" alt="" />
+                    </div>
+                    <div class="content">
+                        <h3>
+                            More Than Just Books: Unveiling the Hidden Benefits of कि𝖙𝖆ब
+                        </h3>
+                        <p>
+                            Looking for a convenient and cost-effective way to explore the
+                            world of literature? कि𝖙𝖆ब offers more than just book rentals
+                            – discover the hidden advantages our platform provides!
+                        </p>
+                        <a href="#" class="btn"> read more</a>
+                    </div>
+                </div>
+                <!-- blog 6 -->
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="/levaze/Blogss/0e6b47670a4c32c075f40600e4b8d6b0.jpg" alt="" />
+                    </div>
+                    <div class="content">
+                        <h3>
+                            From Student Survival to Lifelong Learning: How कि𝖙𝖆ब
+                            Empowers Readers
+                        </h3>
+                        <p>
+                            Whether you're a budget-conscious student or a lifelong learner,
+                            कि𝖙𝖆ब empowers your reading journey. Explore how our platform
+                            caters to readers of all ages and stages.
+                        </p>
+                        <a href="#" class="btn"> read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- blogs section ends -->
+
+    <!-- footer section starts -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>our locations</h3>
+                <a href="#"><i class="fas fa-map-marker-alt"></i> india</a>
+                <a href="#"><i class="fas fa-map-marker-alt"></i> russia</a>
+                <a href="#"><i class="fas fa-map-marker-alt"></i> USA</a>
+                <a href="#"><i class="fas fa-map-marker-alt"></i> germany</a>
+                <a href="#"><i class="fas fa-map-marker-alt"></i> france</a>
+                <a href="#"><i class="fas fa-map-marker-alt"></i> japan</a>
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#home"><i class="fas fa-arrow-right"></i> home</a>
+                <a href="#featured"><i class="fas fa-arrow-right"></i> featured</a>
+                <a href="#arrivals"><i class="fas fa-arrow-right"></i> arrivals</a>
+                <a href="#reviews"><i class="fas fa-arrow-right"></i> reviews</a>
+                <a href="#blogs"><i class="fas fa-arrow-right"></i> blogs</a>
+            </div>
+
+            <div class="box">
+                <h3>extra links</h3>
+                <a href="#"><i class="fas fa-arrow-right"></i> account info</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> ordered items</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> privacy policy</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> payment methods</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> our services</a>
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a><i class="fas fa-phone"></i> +91 9833668832 </a>
+                <a href="#"><i class="fas fa-phone"></i> +111-222-3333</a>
+                <a href="#"><i class="fas fa-envelope"></i> bookavoo@gmail.com</a>
+                <img src="map.jpg" alt="" class="map" />
+            </div>
+        </div>
+
+        <div class="share">
+            <a href="https://levaze.com/#" class="fab fa-facebook"></a>
+            <a href="https://levaze.com/#" class="fab fa-twitter"></a>
+            <a href="https://www.instagram.com/levaze_digital/" class="fab fa-instagram"></a>
+            <a href="https://levaze.com/#" class="fab fa-linkedin"></a>
+        </div>
+
+        <div class="credit">
+            created by <span><b>Group 9 - Web Development</b></span> | all rights
+            reserved!
+        </div>
+    </section>
+    <!-- footer section ends -->
+
+    <!-- loader -->
+    <div class="loader-container">
+        <img src="/levaze/loader-6 (2).gif" alt="" />
+    </div>
+</body>
+
+<!-- javascript file link -->
+<script src="https://unpkg.com//swiper@7/swiper-bundle.min.js"></script>
+
+<script src="./practic_7May.js"></script>
+
+</html>

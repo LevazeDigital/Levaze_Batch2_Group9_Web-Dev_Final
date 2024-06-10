@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Details</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="card.css" />
+  <link rel="stylesheet" href="/bookleaf cart/styles2.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/Footer/style.css" />
+  <script src="https://kit.fontawesome.com/f30fac2c61.js" crossorigin="anonymous"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@200&family=Courgette&family=Edu+TAS+Beginner:wght@700&family=Lato:wght@300;900&family=Mukta:wght@700&family=Mulish:wght@300&family=Open+Sans&family=PT+Sans:ital,wght@1,700&family=Poppins:wght@300&family=Raleway:wght@100&family=Roboto+Condensed:wght@700&family=Roboto+Slab&family=Roboto:wght@300&family=Source+Sans+Pro:wght@300&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-left">
+      <a href="/levaze/practic_7May.html" class="logo">
+        <i class="fas fa-book"> </i> कि𝖙𝖆ब</a>
+    </div>
+    <div class="header-right">
+      <a href="/levaze/practic_7May.html">Home</a>
+    </div>
+  </header>
+  <div class="card">
+    <div class="img">
+      <img src="/Final Book/6dFrz8-aRsm-8bg2geOvbQ.webp" alt="" onclick="clk(this)" /> <br />
+      <img src="/Final Book/e9HMASo-R9uLwzHA7mvLeQ.webp" alt="" onclick="clk(this)" /> <br />
+      <img src="/Final Book/nypm4orCSoK0DW4oHJvtig.webp" alt="" onclick="clk(this)" /> <br />
+      <img src="/Final Book/QJ8mlt70Qe2xdfWnxLKp4g.webp" alt="" onclick="clk(this)" /> <br />
+    </div>
+    <div class="left">
+      <img src="/Final Book/6dFrz8-aRsm-8bg2geOvbQ.webp" id="imgs" />
+    </div>
+
+    <div class="right">
+      <h3>Author - Melanine Taylor</h3>
+      <h1>Into The WOODLAND</h1>
+      <h1>₹500</h1>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star-half-stroke"></i>
+      <h3>Genre - Psychological Drama</h3>
+      <h4>Available Offers</h4>
+      <p>
+        <b>·</b> Special Price - Get extra 11% off (Price Inclusive Of
+        Cashback/Coupon)
+      </p>
+      <p>
+        <b>·</b> Partner Offer - Purchase now & get a Surprise Cashback Coupon
+        for May / June 2024
+      </p>
+      <p>
+        Partner Offer - Sign up for
+        <span class="highlight">VISA Pay Later</span> and get
+        <span class="highlight">कि𝖙𝖆ब</span> Gift Card worth up to ₹1000*
+      </p>
+      <p>
+        <b>·</b> Bank Offer5% Cashback on
+        <span class="highlight">Flipkart Axis Bank Credit Card</span>
+      </p>
+      <div class="number-input">
+        <button class="minus-btn" onclick="decrement()">-</button>
+        <input type="text" id="number" value="1" min="1" max="11" onkeypress="return isNumberKey(event)" />
+        <button class="plus-btn" onclick="increment()">+</button>
+      </div>
+      <div class="nbtn">
+        <a href="/bookleaf cart/cart.html"><button>Add To Cart</button></a>
+        <a href="/payment gateway/index.html"><button>Buy Now</button></a>
+        <a href="/bookleaf rentpage/index.html"><button>Rent & Read</button></a>
+      </div>
+    </div>
+  </div>
+  <script>
+    function clk(newImg) {
+      let getImg = document.getElementById("imgs");
+      getImg.src = newImg.src;
+    }
+
+    function increment() {
+      var numberInput = document.getElementById("number");
+      if (parseInt(numberInput.value) < 11) {
+        numberInput.value = parseInt(numberInput.value) + 1;
+      }
+    }
+
+    function decrement() {
+      var numberInput = document.getElementById("number");
+      if (parseInt(numberInput.value) > 1) {
+        numberInput.value = parseInt(numberInput.value) - 1;
+      }
+    }
+
+    function isNumberKey(evt) {
+      var charCode = evt.which ? evt.which : event.keyCode;
+      if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+        return false;
+      }
+      return true;
+    }
+  </script>
+
+  <div class="loader-container">
+    <img src="/levaze/loader-6 (2).gif" alt="" />
+  </div>
+
+  <script>window.onload = () => {
+      if (window.scrollY > 80) {
+        document.querySelector(".header").classList.add("active");
+      } else {
+        document.querySelector(".header").classList.remove("active");
+      }
+
+      fadeOut();
+    };
+
+    function loader() {
+      document.querySelector(".loader-container").classList.add("active");
+    }
+
+    function fadeOut() {
+      setTimeout(loader, 2500);
+    }</script>
+</body>
+
+</html>
