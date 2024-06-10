@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/bookleaf cart/styles2.css" />
+  <title>Cart</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-1">
+      <a href="/levaze/practic_7May.html" class="logo">
+        <i class="fas fa-book"> </i> कि𝖙𝖆ब</a>
+    </div>
+    <div class="header-2">
+      <nav class="navbar">
+        <a href="/levaze/practic_7May.html">Cancle Order and Go Back to Home Page.</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Cart Container -->
+  <section class="cart">
+    <div class="row">
+      <div class="content">
+        <h3>Your Cart</h3>
+        <div class="cart-items">
+          <!-- Repeat for each item in the cart -->
+          <div class="cart-item">
+            <img src="/bookleaf cart/images/pic2.jpg" alt="Product Image" />
+            <div class="item-details">
+              <h4>Into The WOODLAND</h4>
+              <p>Price: ₹500</p>
+              <p>Quantity: 1</p>
+            </div>
+            <button class="remove-btn"><i class="fas fa-trash"></i></button>
+          </div>
+        </div>
+        <div class="cart-total">
+          <h4>Total: ₹500</h4>
+          <a href="/payment gateway/index.html">
+            <button class="checkout-btn">Checkout</button></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- javascript file link -->
+  <script src="https://unpkg.com//swiper@7/swiper-bundle.min.js"></script>
+
+  <script src="/levaze/practic_7May.js"></script>
+
+  <div class="loader-container">
+    <img src="/levaze/loader-6 (2).gif" alt="" />
+  </div>
+
+  <script>window.onload = () => {
+      if (window.scrollY > 80) {
+        document.querySelector(".header").classList.add("active");
+      } else {
+        document.querySelector(".header").classList.remove("active");
+      }
+
+      fadeOut();
+    };
+
+    function loader() {
+      document.querySelector(".loader-container").classList.add("active");
+    }
+
+    function fadeOut() {
+      setTimeout(loader, 2500);
+    }</script>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent a Book</title>
+    <link rel="stylesheet" href="/bookleaf rentpage/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-1">
+            <a href="/levaze/practic_7May.html" class="logo">
+                <i class="fas fa-book"> </i> कि𝖙𝖆ब</a>
+        </div>
+        <div class="header-2">
+            <nav class="navbar">
+                <a href="/levaze/practic_7May.html">Cancle Order and Go Back to Home Page.</a>
+            </nav>
+        </div>
+    </header>
+
+
+    <div class="header">
+        <span>Item</span>
+        <span>Description</span>
+        <span>Availability</span>
+        <span>Price</span>
+    </div>
+
+    <div class="book-container">
+        <div class="book-image">
+            <img src="/bookleaf cart/images/pic2.jpg" alt="Book Cover" class="book-cover">
+        </div>
+        <div class="book-details">
+            <a href="#">
+                <h1>Into The WOODLAND</h1>
+            </a>
+            <p><strong>Author:</strong> Melanine Taylor</p>
+            <p><strong>Rent Price:</strong> ₹500</p>
+            <p><strong>Released Date:</strong> 23rd October 2020</p>
+            <p><strong>Format:</strong> PDF</p>
+        </div>
+        <div class="availability-section">
+            <label for="availability-from"><strong>From:</strong></label>
+            <input type="date" id="availability-from">
+            <label for="availability-to"><strong>To:</strong></label>
+            <input type="date" id="availability-to">
+        </div>
+        <div class="price-section">
+            <p>₹500</p>
+        </div>
+    </div>
+
+    <div class="rent-section">
+        <a href="/rent payment gateway/index.html"><button>Rent this Book</button></a>
+    </div>
+
+    <div class="loader-container">
+        <img src="/levaze/loader-6 (2).gif" alt="" />
+    </div>
+
+    <script>window.onload = () => {
+            if (window.scrollY > 80) {
+                document.querySelector(".header").classList.add("active");
+            } else {
+                document.querySelector(".header").classList.remove("active");
+            }
+
+            fadeOut();
+        };
+
+        function loader() {
+            document.querySelector(".loader-container").classList.add("active");
+        }
+
+        function fadeOut() {
+            setTimeout(loader, 2500);
+        }</script>
+
+</body>
+
+</html>

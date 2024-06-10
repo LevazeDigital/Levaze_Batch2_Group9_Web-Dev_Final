@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+
+:root {
+  --green: #135d66;
+  --dark-color: #003c43;
+  --black: #444;
+  --light-color: #666;
+  --border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  --border-hover: 0.1rem solid var(--black);
+  box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: rgb(227, 254, 247);
+}
+
+.header {
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 1000px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  background-color: var(--green);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.header-1 {
+  margin-left: 30px;
+}
+
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10000;
+  background: #f7f7f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loader-container.active {
+  display: none;
+}
+
+.loader-container img {
+  height: 50rem;
+}
+
+.logo {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-right: auto;
+  text-decoration: none;
+}
+
+.navbar {
+  background-color: var(--green);
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1rem;
+  padding: 10px;
+}
+
+.navbar a:hover {
+  background-color: var(--dark-color);
+}
+
+.book-container {
+  display: grid;
+  grid-template-columns: 20% 40% 20% 20%;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  max-width: 1000px;
+  margin: 20px auto;
+  gap: 20px;
+}
+
+.book-image {
+  grid-column: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.book-cover {
+  max-width: 100%;
+  height: auto;
+}
+
+.book-details {
+  grid-column: 2;
+  text-align: left;
+}
+
+.book-details h1 {
+  font-size: 2em;
+  margin: 10px 0;
+  color: rgb(19, 93, 102);
+}
+
+.book-details a {
+  text-decoration: none;
+}
+
+.book-details p {
+  margin: 10px 0;
+  color: rgb(0, 60, 67);
+  font-size: 1.2em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.availability-section {
+  grid-column: 3 / span 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.availability-section label {
+  margin: 10px 0;
+  color: rgb(0, 60, 67);
+  font-size: 1.2em;
+}
+.availability-section input[type="date"] {
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+.price-section {
+  grid-column: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: -428px;
+  font-weight: bolder;
+}
+
+.price-section p {
+  display: flex;
+  justify-content: center;
+}
+
+.rent-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.rent-section button {
+  padding: 15px 30px;
+  background-color: rgb(0, 60, 67);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+.rent-section button:hover {
+  background-color: rgb(19, 93, 102);
+}
+
+@media (max-width: 800px) {
+  .header,
+  .book-container {
+    grid-template-columns: 1fr;
+  }
+
+  .book-image,
+  .book-details,
+  .availability-section,
+  .price-section,
+  .rent-section {
+    grid-column: 1;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .book-details {
+    margin-top: 20px;
+  }
+
+  .availability-section,
+  .price-section {
+    margin-top: 10px;
+  }
+
+  .rent-section {
+    margin-top: 20px;
+  }
+
+  .rent-section button {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .availability-section input[type="date"] {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .book-container {
+    padding: 10px;
+  }
+
+  .book-details h1 {
+    font-size: 1.5em;
+  }
+
+  .book-details p {
+    font-size: 1em;
+  }
+
+  .rent-section button {
+    padding: 10px 20px;
+  }
+}

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authors Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #E3FEF7;
+        }
+
+        .navmenu {
+            background: #003c43;
+            /* Set background color here */
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navmenu ul {
+            text-decoration: none;
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .navmenu ul li {
+            margin-right: 20px;
+        }
+
+        .navmenu ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .navmenu ul li a:hover {
+            color: #E3FEF7;
+            background-color: #072d30;
+        }
+
+        .logo {
+            max-width: 100px;
+        }
+
+        .navmenu h2 {
+            color: #E3FEF7;
+            float: left;
+        }
+
+        .wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        img {
+            max-width: 260px;
+            border-radius: 20px;
+            border: 3px solid #003c43;
+            margin-right: 20px;
+        }
+
+        .text-box {
+            color: black;
+        }
+
+        .text-box h2 {
+            font-size: 42px;
+        }
+
+        .books-section {
+            margin-top: 50px;
+        }
+
+        .books-section h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .books-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .book {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 10px;
+            max-width: 300px;
+            text-align: center;
+        }
+
+        .book img {
+            max-width: 200px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navmenu">
+        <h2>कि𝖙𝖆ब</h2>
+        <img class="logo" src="images/logo.png" alt="">
+        <ul>
+            <li><a href="/return-home"> Return Home</a></li>
+            <li><a href="/contact-us">Contact-Us</a></li>
+        </ul>
+    </div>
+
+    <div class="wrapper">
+        <img src="images\harrypotter.jpg" alt="">
+        <div class="text-box">
+            <h2>Harry Potter</h2>
+            <p>J.K. Rowling created one of the most beloved and enduring fictional worlds with her "Harry Potter"
+                series. Her magical storytelling transports readers to the enchanting Hogwarts School of Witchcraft and
+                Wizardry, where they embark on epic adventures alongside Harry, Ron, and Hermione. Rowling's imaginative
+                prose and richly detailed universe have captivated millions of readers of all ages around the globe.</p>
+        </div>
+    </div>
+
+    <div class="books-section">
+        <h3>Top 3 Genres of Harry Potter</h3>
+        <div class="books-list">
+            <div class="book">
+                <a href="/Product Details/PRD.html"><img src="ar1.jpeg" alt="Romance"></a>
+                <h4>Romance</h4>
+                <p>Love stories that sweep you off your feet with passion and longing.</p>
+            </div>
+            <div class="book">
+                <a href="/Product Details/PRD.html"><img src="wolves2jpeg cover.jpg" alt="Adult"></a>
+                <h4>Adult</h4>
+                <p>Description: Gritty tales exploring the complexities of grown-up life and relationships.</p>
+            </div>
+            <div class="book">
+                <a href="/Product Details/PRD.html"><img src="ar1.1.jpg" alt="Horror"></a>
+                <h4>Horror</h4>
+                <p>Description: Spine-chilling narratives that linger in the shadows, igniting fear with every page
+                    turn.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles1.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="login">
+        <h1>Sign Up</h1>
+        <div class="signup-link">
+          <p>Already a User? <a href="#">Login</a></p>
+        </div>
+        <form action="/levaze/practic_7May.html" method="" class="login-form">
+          <div class="form-group">
+            <input
+              type="text"
+              name="username"
+              placeholder="Full Name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="password"
+              name="password"
+              placeholder="Create Your Own Strong Password"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label
+              ><input type="checkbox" name="remember" /> Remember me
+            </label>
+          </div>
+          <div class="form-group">
+            <a href="/levaze/practic_7May.html">
+              <button type="submit">Sign In</button>
+            </a>
+          </div>
+        </form>
+
+        <div class="social-login">
+          <p>Or Sign Up With:</p>
+          <div class="social-icons">
+            <a href="#"><img src="images/icons/iconfb.png" alt="Facebook" /></a>
+            <a href="#"
+              ><img src="images/icons/icongoogle.png" alt="Google"
+            /></a>
+            <a href="#"
+              ><img src="images/icons/icons8-ios-48.png" alt="iOS"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="image">
+        <img src="images/book.jpeg" alt="Login Image" />
+      </div>
+    </div>
+
+    <div class="loader-container">
+      <img src="/levaze/loader-6 (2).gif" alt="" />
+    </div>
+  
+    <script>window.onload = () => {
+        if (window.scrollY > 80) {
+          document.querySelector(".container").classList.add("active");
+        } else {
+          document.querySelector(".container").classList.remove("active");
+        }
+  
+        fadeOut();
+      };
+  
+      function loader() {
+        document.querySelector(".loader-container").classList.add("active");
+      }
+  
+      function fadeOut() {
+        setTimeout(loader, 2500);
+      }</script>
+  </body>
+</html>

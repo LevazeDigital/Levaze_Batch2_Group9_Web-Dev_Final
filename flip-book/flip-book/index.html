@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Css Flip Book</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+		integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+	<div class="book">
+		<input type="checkbox" id="c1">
+		<input type="checkbox" id="c2">
+		<input type="checkbox" id="c3">
+		<div class="flip-book">
+			<div class="flip" id="p1">
+				<div class="back">
+					<img src="/bookleaf cart/images/pic2.jpg"> <!--2.jpg-->
+					<label class="back-btn" for="c1">Back</label>
+				</div>
+				<div class="front">
+					<h2><a href="/levaze/practic_7May.html"><i class="fas fa-book"> </i> कि𝖙𝖆ब</a></h2>
+					<h1>Welcome to your Library!<br>Fell Free to Flip and Explore your Shelf</h1>
+					<label class="next-btn" for="c1">Next</label>
+				</div>
+			</div>
+			<div class="flip" id="p2">
+				<div class="back">
+					<img src="Deviantking.jpg"> <!--3.jpg-->
+					<label class="back-btn" for="c2">Back</label>
+				</div>
+				<div class="front">
+					<h2>Into The WOODLAND</h2>
+					<p>Step beyond the treeline and enter a world of wonder. Into the Woodland is an enchanting tale
+						that beckons you on an unforgettable adventure. Deep within the forest, secrets unfold and
+						magical creatures await. Are you ready to embark on a journey where nature whispers and
+						friendship blossoms?</p>
+					<label class="next-btn" for="c2">Next</label>
+				</div>
+			</div>
+
+			<div class="flip" id="p3">
+				<div class="back">
+					<h1>We are Pleasured to have you as a Customer.<br>Please Visit Soon!</h1>
+					<label class="back-btn" for="c3">Back</label>
+				</div>
+				<div class="front">
+					<h2>Deviant king</h2>
+					<p>At elite Royal Elite, new girl Elsa craves anonymity. One defiance ignites a war with Aiden King,
+						the school's ruthless ruler. Hate morphs to desire in this dark, high-stakes romance. Will Elsa
+						survive the dangerous games of the Deviant King?
+					</p>
+					<label class="next-btn" for="c3">Next</label>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="loader-container">
+		<img src="/levaze/loader-6 (2).gif" alt="" />
+	</div>
+
+	<script>window.onload = () => {
+			if (window.scrollY > 80) {
+				document.querySelector(".book").classList.add("active");
+			} else {
+				document.querySelector(".book").classList.remove("active");
+			}
+
+			fadeOut();
+		};
+
+		function loader() {
+			document.querySelector(".loader-container").classList.add("active");
+		}
+
+		function fadeOut() {
+			setTimeout(loader, 2500);
+		}</script>
+</body>
+
+</html>
